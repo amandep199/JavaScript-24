@@ -11,5 +11,5 @@ let enter = true;
 //symbol=unique
 
 console.log(typeof("aman"));
-console.log(typeof(null));      //type=objecrt
+console.log(typeof(null));      //type=object
 console.log(typeof(undefined));  //type= undefined

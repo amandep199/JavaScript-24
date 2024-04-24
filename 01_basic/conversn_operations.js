@@ -15,9 +15,26 @@
 // "" = false
 // "wer"= true
 
-let Logedin = "23"
+// let Logedin = "23"
 
-let booleanvalue= Boolean(Logedin)
+// let booleanvalue= Boolean(Logedin)
 
-console.log(typeof booleanvalue)
-console.log(booleanvalue)
+// console.log(typeof booleanvalue)
+// console.log(booleanvalue)
+
+
+// let value = 3
+
+// let negValue= -value
+
+// console.log(negValue)
+
+console.log("1" + 2)
+console.log("1" + "2")     
+
+//first word is constant not string
+
+console.log(1 + 2+ "2")     
+
+
+console.log(+true)
