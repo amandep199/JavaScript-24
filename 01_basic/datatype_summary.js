@@ -1,44 +1,51 @@
-// primitive       call by value
+// // primitive       call by value
 
 
-// 7 types - String , number , boolean ,undefined, null , symbol, bigInt
+// // 7 types - String , number , boolean ,undefined, null , symbol, bigInt
 
-//symbol ex
-
-
-// let id = Symbol(11223)
-// let newId= Symbol(234234)
-
-// console.log(id===newId)
+// //symbol ex
 
 
-// //bigint ex
+// // let id = Symbol(11223)
+// // let newId= Symbol(234234)
 
-// let bigInt = 7398453984n
-
-// console.log(typeof(bigInt))
-//refernce non-primitive
+// // console.log(id===newId)
 
 
-//Arrays, object
+// // //bigint ex
+
+// // let bigInt = 7398453984n
+
+// // console.log(typeof(bigInt))
+// //refernce non-primitive
+
+
+// //Arrays, object
 
 
 
-// const myClass=["Name", "Class", "Roll no"]
+// // const myClass=["Name", "Class", "Roll no"]
 
-//      let Student_name={
+// //      let Student_name={
 
-//         name:"aman",
-//         class:"mca",
+// //         name:"aman",
+// //         class:"mca",
 
      
-//      }
+// //      }
 
-const myFun= function(){
+// const myFun= function(){
 
-   let  roll_no = 2
+//    let  roll_no = 2
 
-   console.log(roll_no)
-}
+//    console.log(roll_no)
+// }
 
  
+
+
+
+// memory type
+
+
+//Stack(fpr primitive ) you get copy,       Heap(non primitive) you get reference
