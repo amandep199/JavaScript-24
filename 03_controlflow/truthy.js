@@ -44,6 +44,15 @@ let val1 ;
 val1 = undefined ?? 7
 
 
-console.log(val1)
+// console.log(val1)
+
+
+//Treniary operator
+
+// condition ? true:false
+
+let price = 100
+
+price >=80 ? console.log("yes"):console.log("no")
 
 
