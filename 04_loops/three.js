@@ -22,3 +22,24 @@ for (const greet of greetings) {
 const map = new Map()
 
 
+map.set('IN',"India")
+map.set('UK',"United Kingdom")
+
+// console.log(map)
+
+
+for (const [value,amount] of map) {
+    // console.log(value, "------",amount)
+}
+
+
+//+++++++++++++++++++++++++++for OF not work on objects
+const myObj = {
+
+    'game1':"Gta 5",
+    'game2':"Cod"
+}
+
+for (const games of myObj) {
+    // console.log(`games are ${games}`)
+}
