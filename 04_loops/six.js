@@ -36,12 +36,12 @@ newNums.push(num)
 
 
 const books =[{title:"book1",genre:"history",publish:"2001",edition:"2021"},
-{title:"book2",genre:"sci-fi",publish:"2003",edition:"20020"},
-{title:"book3",genre:"action",publish:"2004",edition:"20022"},
-{title:"book4",genre:"drama",publish:"2005",edition:"20023"}]
+{title:"book2",genre:"sci-fi",publish:"2003",edition:"2020"},
+{title:"book3",genre:"action",publish:"2004",edition:"2022"},
+{title:"book4",genre:"drama",publish:"2005",edition:"2023"}]
 
 
 
-const myBook = books.filter( (bk)=>bk.genre==="action")
+let myBook = books.filter( (bk)=>{ return bk.publish >=2000 && bk.genre==='history'})
 
 console.log(myBook)
