@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai or code</h1>
+    <button id="stop"> Stop</button>
+</body>
+
+
+<script>
+function newLinee(){
+    const newLine = document.querySelector('h1').innerHTML="hello guys"
+
+}
+ let changeme = setTimeout(newLinee,2000)
+
+
+ document.querySelector('#stop').addEventListener('click',function(e){
+    clearTimeout(changeme)
+    console.log("STOPPED")
+ })
+</script>
+</html>
