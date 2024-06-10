@@ -77,7 +77,7 @@ const promiseFive = new Promise(function(_resolve,_reject){
     setTimeout(function(){
         let error = true;
     if(!error){
-        _resolve({username:"aman",age:21})
+        _resolve({username:"aman",age:"21"})
     
     }else{
         _reject('error JS went wrong')
@@ -90,8 +90,12 @@ const promiseFive = new Promise(function(_resolve,_reject){
 
 
 async function consumePromiseFive(){
-    const response = await promiseFive
-    console.log(response)
+ try { const response = await promiseFive
+    console.log(response) 
+} catch(error){
+
+    console.log(error) 
+}
 }
 
 consumePromiseFive()
