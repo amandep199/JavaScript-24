@@ -1,29 +1,97 @@
-const promiseOne = new Promise(function (_resolve,_reject){
+// const promiseOne = new Promise(function (_resolve,_reject){
 
-    //do an async task
-    //db calls,cryptography
+//     //do an async task
+//     //db calls,cryptography
 
+//     setTimeout(function(){
+// console.log("hello higigshv")
+// _resolve()
+
+//     },1000)
+
+// })
+//     promiseOne.then(function(){
+
+//         console.log("promise completed")
+//     })
+
+
+//     new Promise(function(_resolve,_reject){
+//      setTimeout(function(){
+
+//         console.log("helooo jii")
+//         _resolve()
+//      },1000)
+
+
+//     }).then(function(){
+//         console.log("wokeddd 2 promise")
+//     })
+
+
+//     const promiseThree = new Promise(function(_resolve,_reject){
+
+//         setTimeout(function(){
+
+//             console.log("3rd promise")
+//             _resolve({username :"chai",age: 21})
+//         },2000)
+//     })
+
+// promiseThree.then(function(user){
+//     console.log(user)
+// })
+
+
+const promiseFour = new Promise(function(_resolve,_reject){
+
+setTimeout(function(){
+    let error = false;
+if(!error){
+    _resolve({username:"aman",age:21})
+
+}else{
+    _reject('error something went wrong')
+}
+
+
+},1000)
+
+})
+
+promiseFour.then((user)=>{
+     console.log(user)
+
+     return user.username
+}).then((username)=>{
+    console.log(username)
+}).catch((error)=>{
+
+console.log(error)
+}).finally(function(){
+    console.log("finalyy resolve or rejected")
+})
+
+
+const promiseFive = new Promise(function(_resolve,_reject){
     setTimeout(function(){
-console.log("hello higigshv")
-_resolve()
-
+        let error = true;
+    if(!error){
+        _resolve({username:"aman",age:21})
+    
+    }else{
+        _reject('error JS went wrong')
+    }
+    
+    
     },1000)
 
 })
-    promiseOne.then(function(){
-
-        console.log("promise completed")
-    })
 
 
-    new Promise(function(_resolve,_reject){
-     setTimeout(function(){
+async function consumePromiseFive(){
+    const response = await promiseFive
+    console.log(response)
+}
 
-        console.log("helooo jii")
-        _resolve()
-     },1000)
-
-
-    }).then(function(){
-        console.log("wokeddd 2 promise")
-    })
+consumePromiseFive()
