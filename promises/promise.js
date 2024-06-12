@@ -99,3 +99,18 @@ async function consumePromiseFive(){
 }
 
 consumePromiseFive()
+
+// async function getAllusers(){
+//     const response = await fetch('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object')
+
+// }
+
+fetch('https://randomuser.me/api/')
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+console.log(data)
+}).catch((error)=>{
+    console.log(`error occur${error}`)
+})
