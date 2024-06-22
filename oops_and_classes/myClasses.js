@@ -1,20 +1,20 @@
-// class user{
-//     constructor(username,email,password){
-//         this.email= email
-//         this.password= password
-//         this.username = username
+class user{
+    constructor(username,email,password){
+        this.email= email
+        this.password= password
+        this.username = username
     
         
-//     }
-//     encryptPassword(){
-// return `${this.password}abc`
-// }
+    }
+    encryptPassword(){
+return `${this.password}abc`
+}
 
-// }
+}
 
-// const chai = new user("Aman","aman@123","abcc")
+const chai = new user("Aman","aman@123","abcc")
 
-// console.log(chai.encryptPassword())
+console.log(chai.encryptPassword())
 
 
 
